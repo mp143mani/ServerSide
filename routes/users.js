@@ -103,13 +103,13 @@ router.post('/reset-password', async(req,res)=>{
     var transporter = nodemailer.createTransport({
         service: "gmail",
         auth: {
-          user: "1999shubhamjoshi@gmail.com",
-          pass: "kqpbptbxvdetxvpr",
+          user: "manifun@gmail.com",
+          pass: "mani1234",
         },
       });
 
       var mailOptions = {
-        from: "1999shubhamjoshi@gmail.com",
+        from: "manifun@gmail.com",
         to:  user.email,
         subject: "Password Reset",
         text: "That was easy!",
@@ -117,7 +117,7 @@ router.post('/reset-password', async(req,res)=>{
        <h2>Hello ${user.email}</h2>
        <p>We've recieved a request to reset the password for your account associated with your email.
        You can reset your password by clicking the link below</p>
-       <a href=https://webcode2-render.onrender.com/users/update-password/${token}> Reset Password</a>
+       <a href=https://https://webcode-84kn.onrender.com//users/update-password/${token}> Reset Password</a>
        <p><b>Note:</b>The link expires 15 minutes from now</p>
       </div>`,
       };
