@@ -1,7 +1,7 @@
 const bcrypt = require("bcryptjs");
 const jwt = require("jsonwebtoken");
 const saltRound = 10;
-const secretKey = "PoINjnLK89$#!Nnjsdk!@%";
+const secretKey = "MoINjnLK89$#!Nnjsdk!@%";
 const JWTD = require("jwt-decode");
 
 let hashPassowrd = async (password) => {
